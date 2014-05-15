@@ -109,7 +109,7 @@ module Sidekiq
           end
         end
 
-        return matched_queues.collect { |q| "queue:#{q}" }.uniq.sort
+        return matched_queues.collect { |q| "queue:#{q}" }.uniq.shuffle
       end
 
     end

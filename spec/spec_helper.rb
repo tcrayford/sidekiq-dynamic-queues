@@ -3,6 +3,7 @@ require 'sidekiq-dynamic-queues'
 require 'celluloid'
 require 'sidekiq'
 require 'sidekiq/launcher'
+require 'sidekiq/api'
 
 Sidekiq.logger.level = Logger::DEBUG
 Celluloid.logger = Sidekiq.logger = nil
